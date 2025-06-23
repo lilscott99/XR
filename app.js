@@ -1,5 +1,6 @@
 document.getElementById('enter-ar').addEventListener('click', async () => {
-  if (navigator.xr) {
+  console.log("clicked")
+  if (navigator.xr) {
     try {
       const session = await navigator.xr.requestSession('immersive-ar', {
         requiredFeatures: ['local', 'dom-overlay'],
